@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="304AEB">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            theme: {
+                extend:{
+                                
+                    colors:{
+                        clifford: '#304AEB',
+                        velde: '#6DCD8E',   
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Qué quiere hacer hoy?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body, h1, h2, h3, h4, h5 {
+        font-family: Montserrat;
+    }
+
+    ::placeholder { 
+  text-align: start;
+  vertical-align: top !important;
+}
+    </style>
+
+</head>
+
+<body class="container flex justify-center mx-5 mt-5 px-10 py-5 bg:white">
+    <div class="h1 mx-5 my-0.5 text-2xl text-center text-white">¿Qué Quiere Hacer Hoy?</div>
+    <div class="grid grid-rows-2 grid-cols-2">
+        <div class="w-md shadow-lg bg-clifford rounded-md pt-10"></div>
+        <div class="w-md shadow-lg bg-velde rounded-md pt-10"></div>
+        <div class="w-md shadow-lg bg-clifford rounded-md pt-10"></div>
+        <div class="w-md shadow-lg bg-velde rounded-md pt-10"></div>
+        
+    </div>
+
+
+
+</body>

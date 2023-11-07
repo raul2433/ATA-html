@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="304AEB">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            theme: {
+                extend:{
+                                
+                    colors:{
+                        clifford: '#304AEB',
+                        velde: '#6DCD8E',   
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Registro de obra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    
+    body, h1, h2, h3, h4, h5 {
+        font-family: Montserrat;
+        
+    }
+
+    ::placeholder { 
+  text-align: start;
+  vertical-align: top !important;
+}
+
+    </style>
+
+</head>
+
+   
+
+<body class="container flex flex-col mx-5  px-10  bg:white">
+
+ <nav class="w-full flex justify-between mx-5 mb-20">  
+            <img class="h-20 " src="Images/LogoMarcasatuAlcance.png">
+       
+            <details>
+                <summary class="justify-self-end mt-10">Nombre del usuario </summary>
+          
+            <ul>    
+                <li><a href="www.google.com" class="h4 text-sm mt-2 text-clifford hover:text-blue-200"><strong>Mi perfil</strong></a></li>
+                <li><a href="www.google.com" class="h4 text-sm mt-2 text-clifford hover:text-blue-200"><strong>Estatus de solicitudes</strong></a></li>
+                <li><a href="www.google.com" class="h4 text-sm mt-2 text-clifford hover:text-blue-200"><strong>Descarga de registros</strong></a></li>
+                <li><a href="www.google.com" class="h4 text-sm mt-2 text-clifford hover:text-blue-200"><strong>Pagos y facturación</nav></strong></a></li>
+            </ul>
+        </details>
+    </nav>
+
+
+
+    
+    <div class="flex justify-center bg:white rounded-md ">
+            <div class="flex-col justify-center w-md  shadow-lg bg-clifford rounded-md mb-5 pt-10 ">
+    <div class="h1 mx-5 my-0.5 text-2xl text-center text-white">Registro de Obra</div>
+
+        <div class="flex flex-col justify-center w-md p-6  bg-white my-10 px-10">
+            
+
+        <div class="h2 mx-5 my-0.5 text-l text-center text-gray-900">Inicia el proceso de registro de Obra llenando este formulario.</div>
+        <div class="h2 mx-5 my-0.5 text-l text-center text-gray-900">Sigue las instrucciones hasta obtener <b class="font-bold">tu título de nombre de obra</b></div>
+        <div class="h1 mx-5 mt-5 mb-5 text-2xl text-center font-bold text-gray-900">Formato para registro</div>
+       
+        <form class="flex-col mx-10  px-10 w-md">
+
+        <div class="h2 my-2 text-l text-center text-gray-900">Datos del Autor</div>
+        
+        <div class="mb-5">
+        <label for="nombre" class="w-md text-base  mt-2 my-2">Nombre de persona física o moral </label>
+        <input type="nombre" id="nombre" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Nombre de persona física o moral" required/>   
+        </div>
+
+        <div class="mb-5">
+            <label for="Fecha de Nacimiento" class="w-md text-base  mt-2 my-2">Fecha de nacimiento </label>
+            <input type="date" id="FechadeNacimiento" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Fecha de nacimiento" required/>   
+            </div>
+    
+
+        <div class="mb-5">
+        <label for="RFC" class="w-md text-base  mt-2 my-2">RFC</label>
+        <input type="RFC" id="RFC" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="RFC " required/>
+        </div>
+
+        <div class="mb-5">
+        <label for="CURP" class="w-md text-base  mt-2 my-2 ">CURP</label>
+        <input type="CURP" id="CURP" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="CURP " required/>
+        </div>
+
+        <div class="mb-5">
+        <label for="domicilio" class="w-md text-base mt-2 my-2">Domicilio</label>
+        <input type="domicilio" id="domicilio" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Domicilio " required/>
+        </div>
+
+        <div class="mb-5">
+        <label for="Porcentaje de obra" class="w-md text-base mt-2 my-2">Porcentaje de propiedad </label>
+        <input type="porcentaje" class="border w-full px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" required>
+        </div>
+
+        <div class="p mt-5 "> INE </div>
+        <input type="file" class="mt-2" required>
+
+        <div class="p mt-5 "> Carta Poder </div>
+        <input type="file" class="mt-2" required>
+        <div class="flex text-xs mt-3 mb-5  ">Descarga el formato de Carga Poder    
+        <a download href="www.google.com" target="_blank" rel="noreferrer" class="text-clifford ml-1" ><strong><u> aquí</u></strong></a>
+        </div>
+
+         <div class="mb-5"   >   
+        <label for="Nombre de obra" class=" mb-2 my-2">Título de la obra</label>
+        <input type="Nombre de obra" id="Nombre de obra" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Nombre a registrar" required/>
+        </div>
+
+        <div class="mb-5">
+        <label for="Anterioridad" class="block text-base mb-2 my-2">Este nombre se ha utilizado con anterioridad de forma oficial o fiscal </label>
+        <select name="Anterioridad" id="AnterioridadSiNo" class="my-2 border w-full px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" required>
+            <option value="1">-</option>
+            <option value="2">Sí</option>
+            <option value="3">No</option>
+        </select>
+        </div>
+        
+        <div class="mb-5">
+        <label for="Fecha de registro anterior" class="block text-base mb-2 my-2">Indique la fecha de registro anterior (si aplica) </label>
+        <input type="month" class="border w-full px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" required>
+        <div class="flex flex-col justify-start items-start">
+        </div>
+
+        <div class="mb-5">
+        <label for="Tipo Registro" class="block text-base mb-2 my-2 mt-5">Elige el tipo de obra a registrar</label>
+        <select name="Tipo Registro" id="Tipo Registro" class="my-2 border w-full px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" >
+            <option value="1">Literaria</option>
+            <option value="2">Musical, con o sin letra</option>
+            <option value="3">Dramática</option>
+            <option value="4">Danza</option>
+            <option value="5">Pictórica o de dibujo</option>
+            <option value="6">Escultoria o de carácter plástico</option>
+            <option value="7">Caricatura o historieta</option>
+            <option value="8">Arquitectónica</option>
+            <option value="9">Cinematográfica y demás obras</option>
+            <option value="10">Programas de radio y televisión</option>
+            <option value="11">Programas de Cómputo</option>
+            <option value="12">Fotográfica</option>
+            <option value="13">Arte aplicado</option>
+            <option value="14">Base de datos</option>
+        </select>
+        </div>
+
+        <div class="mb-5">
+        <label for="Descripcion" class="block text-base mb-2 my-2 mt-5">Describa brevemente su Obra</label>
+        <input type="Descripcion" id="Descripcion" class="border w-full  h-20 text-base px-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Descripción breve" required/>
+        </div>
+
+        <div class="flex flex-col justify-start items-start">
+         
+        <div class="p mt-5 "> Cargue su Obra </div>
+        
+        <div class="p"><small> PNG, JPG, o PDF (máximo 5 MB)</small> </div>
+        <input type="file" class="mt-2" required>
+
+        
+        <button type="submit" class=" justify-center w-1/2 my-5 w-md px-5 py-5 bg-clifford sm:bg-clifford hover:bg-blue-900 text-white shadow-md font-bold rounded-full ">
+            Pago de servicio</button>
+        
+          </form>  
+    </div>
+    
+    <div class="flex justify-center bg:white  w-full">
+        <div class="flex flex-col items-left w-full bg-white py-10 my-10">
+            <div class="p mx-5 my-0.5 text-l text-center text-gray-900">Concluye el pago de los servicios de registro de marca para enviar tu solicitud.</div>
+            <div class="p mx-5 my-0.5 text-l text-center text-gray-900">Sigue las instrucciones hasta obtener <b class="font-bold">tu título de registro y propiedad</b></div>
+            <div class="h1 mx-5 mt-5 mb-5 text-2xl text-center font-bold text-gray-900">Datos de Pago</div>
+                <label for="Titular" class="mb-2 my-2">Nombre del titular de la tarjeta</label>
+                <input type="Titular" id="Titular" class="border w-full px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Nombre del titular de la tarjeta"/>  
+             
+            <label for="Numero Tarjeta" class="block text-base mb-2 my-2">Número de la tarjeta (16 dígitos) </label>
+            <input type="Numero Tarjeta" id="Numero Tarjeta" class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Número de la tarjeta " required/>
+            <label for="Vigencia" class="block text-base mb-2 my-2">Vigencia de la tarjeta</label>
+            <input type="month" id="Vigencia"  class="border w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-clifford rounded-md" placeholder="Vigencia"/>
+            
+                <div class="mt-0.5 flex flex-col md:justify-start ">
+                    <div class="flex items-center mt-2">
+                        <input type="checkbox" id="priv" name="priv" required>
+                        <label for="priv" class="w-md ml-2">Aviso de Privacidad</label>
+                    </div>
+                
+                    <div class="flex items-center mt-2">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" class="text-base w-md ml-2">Acepto Términos y Condiciones</label>
+                    </div>
+                </div>
+            <div class="h5 text-2xl bg:grey-200 mt-32 text-center shadow-lg shadow-blue-200 rounded-md px-10 py-10"><strong>Gracias por Confiar en</strong> Marcas a tu Alcance
+                <p class="text-base mt-5">Tu solicitud está en proceso de aceptación, en breve te llegará un mail con la confirmación y los pasos a seguir.</p>
+            </div>
+
+            </body>
+                <footer class="w-full flex md:justify-between mt-32 bg:white">
+                    <div>
+                    
+                        <img class="w-32 mb-5" src="Images/LogoMarcasatuAlcance.png">
+                        <div class="h3 text-xl text-black"><strong>Síguenos </strong><br></div>
+                        <a class="text-lg hover:text-clifford" href="mailto:ayuda@atualcance.mx">ayuda@atualcance.mx </a>
+                        <div class="flex">
+                        <a class="mr-5 mt-5" href="https://www.facebook.com/marcasatualcancemx"><svg fill="#304AEB"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></i>
+                            </a> 
+                            <a class="mr-5 mt-5" href="https://www.instagram.com/tumarcaatualcance"> <svg fill="#304AEB" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="md:text-end">
+                        <a href="www.google.com" class="h3 text-xl text-black mb-2"><strong>Servicios</strong></a>
+                        <ul >    
+                            <li><a href="www.google.com" class="h4 text-base mt-5 text-clifford hover:text-blue-200"><strong>Registro de Marca</strong></a></li>
+                            <li><a href="www.google.com" class="h4 text-base mt-5 text-clifford hover:text-blue-200"><strong>Estudio de Registrabilidad</strong></a></li>
+                            <li><a href="www.google.com" class="h4 text-base mt-5 text-clifford hover:text-blue-200"><strong>Registro de Nombre</strong></a></li>
+                            <li><a href="www.google.com" class="h4 text-base mt-5 text-clifford hover:text-blue-200"><strong>Registro de Obra</strong></a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    </footer>
+</html>
+                    
+
